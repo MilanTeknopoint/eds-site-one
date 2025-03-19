@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  console.log(block.children);
   [...block.children].forEach((row) => {
     [...row.children].forEach((col, j) => {
       col.classList.add(`product-list-row-${j + 1}`);
